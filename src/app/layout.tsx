@@ -8,7 +8,8 @@ import "./globals.css";
 
 import { SiteChrome } from "@/components/chrome/SiteChrome";
 
-const SITE_URL = "https://tahseenjaber.example";
+const SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://tahseen-jaber.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

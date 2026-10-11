@@ -52,6 +52,17 @@ npm run build    # production build (static)
 npm start
 ```
 
+## Deploy on Vercel
+
+Zero configuration required — Vercel auto-detects Next.js.
+
+1. Push/import this repository on [vercel.com](https://vercel.com) (or run `npx vercel`).
+2. Use the defaults: **Framework: Next.js**, **Build: `next build`**, **Install: `npm install`**.
+3. (Optional) set the environment variable `NEXT_PUBLIC_SITE_URL` to your production URL (e.g. `https://your-domain.com`) so Open Graph / Twitter card links resolve to the right domain.
+4. Deploy — every route (`/`, `/login`, `/signup`) is statically prerendered.
+
+Requires Node 20+ (`engines` is set in `package.json`).
+
 ## Project structure
 
 ```
